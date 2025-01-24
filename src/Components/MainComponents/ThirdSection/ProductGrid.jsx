@@ -3,7 +3,7 @@ import './ProductGrid.scss';
 import data from '../../../Assets/Data/data';
 import { useNavigate } from 'react-router';
 import { FaArrowRight } from 'react-icons/fa';
-import MyContext from '../../Context'; // Import the context
+import MyContext from '../../Context'; 
 
 const ProductGrid = () => {
   const Navigate = useNavigate();
