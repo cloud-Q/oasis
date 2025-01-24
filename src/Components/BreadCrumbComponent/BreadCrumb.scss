@@ -1,0 +1,24 @@
+.BreadCrumbNavigation{
+    .breadCrumbSec{
+
+        
+        ul{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            cursor: pointer;
+
+            li{
+                list-style-type: none;
+                box-sizing: border-box;
+
+                &:hover{
+                    box-sizing: border-box;
+                    text-decoration: underline;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,270 @@
+.SignupContainer{
+    z-index: 200;
+    position: absolute;
+    inset: 0;
+    background-color: #10101030;
+    height: 1000px;
+    
+    .SignupSection{
+        
+        position: absolute;
+        right: 0;
+        // height: 100vh;
+        width: 720px;
+        background-color: white;
+        color: black;
+        height: 100%;
+       
+
+        .SignupHeaderDivision{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            .HeadingDiv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3%;
+                width: 100%;
+        
+        
+                .MainHeading{
+                    width: 80%;
+                    height: 44px;
+                    padding-right: 20px;
+        
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                button{
+                    cursor: pointer;
+                    height: 44px;
+                    width: 44px;
+                    border-radius: 50%;
+                    border: none;
+        
+        
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    font-size: 20px;
+                    background-color: #2d2c2c21;
+                   
+                   
+                }
+            }
+
+            .Image{
+                margin-top: 5%;
+                position: relative;
+                left: 10px;
+               
+
+                img{
+                    width: 227px;
+                    height: 227px;
+                }
+            }
+        }
+
+        .SignupMidDivision{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // gap: 15px;
+
+        
+
+            p{
+                width: 353px;
+                font-size: 23px;
+                font-weight: 500;
+                flex-wrap: wrap
+              
+            }
+            .form{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+    
+                #email, #password{
+                    display: block;
+                    box-sizing: border-box;
+                    height: 54px;
+                    width: 353px;
+                    border: none;
+                    border-radius: 25px;
+                    margin-top: 15px;
+    
+                    box-shadow: 2px 2px 8px #7c71df4f,-2px -2px 8px #7c71df4f;
+                    padding: 2px 14px;
+    
+                    text-transform: capitalize;
+
+                   
+                    
+                }
+    
+                .errorMsg{
+                    margin-top: 10px;
+                    color: red;
+                    margin-left: 25px;
+                }
+
+                .forgotPassword{
+                    display: block;
+                    text-decoration: none;
+
+                    position: relative;
+                    left: 210px;
+                    margin-top: 15px;
+           
+                }
+
+                button{
+                    box-sizing: border-box;
+                    height: 44px;
+                    width: 353px;
+                    border-radius: 25px;
+                    background-color: #7C71DF;
+                    color: white;
+                    font-size: 16px;
+                    margin-top: 15px;
+                    border: 1px solid black;
+                   
+                }
+            }
+
+        }
+
+
+        // .SignupEndDivision{
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+
+
+        //     .seprator{
+        //         margin-top: 15px;
+           
+
+        //         &::before,
+        //         &::after{
+        //             display: inline-block;
+        //             content: "";
+        //             border-top: 1px solid rgba(0, 0, 0, 0.322);
+        //             width: 150px;
+        //             margin: 0 1rem;
+        //         }
+                
+        //     }
+
+        //     button{
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         gap: 15px;
+
+        //         border: 1px solid black;
+        //         box-sizing: border-box;
+        //         height: 45px;
+        //         width: 353px;
+        //         border-radius: 25px;
+        //         font-size: 16px;
+        //         margin-top: 15px;
+
+        //         background-color: white;
+        //         cursor: pointer;
+              
+        //     }
+
+        //     .signUpSec{
+           
+        //         p{
+        //             color: rgba(0, 0, 0, 0.527);
+
+        //             a{
+        //                 text-decoration: none;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .tNcSection{
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .tNcContainer{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                width: 353px;
+
+                input{
+                    font-size: 24px;
+                    width: 19px;
+                    height: 19px;
+                    background-color: #686A74;
+                    color: #686A74;
+                    border-radius: 5px;
+                }
+                
+
+                label{
+                    flex-wrap: wrap;
+                    width: 300px;
+
+
+                    font-size: 16px;
+                    line-height: 19.27px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .bkTOLoginSec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 21px;
+
+
+            p{
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+// Sign UP Page Styliing
+
+
+.SignUpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ 
+}

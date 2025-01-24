@@ -1,0 +1,45 @@
+.FooterComponent{
+    background-color: black;
+    color: white;
+    height: 410px;
+    padding-top: 2%;
+    margin-top: 3%;
+    
+    
+    .FooterSection{
+        
+        margin: 5% 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+
+        .box{
+            height: 202px;
+            width: 290px;
+        }
+
+        .flexOne{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+          
+            position: relative;
+
+            .route{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .flexTwo{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 0px;
+
+        }
+    }
+}

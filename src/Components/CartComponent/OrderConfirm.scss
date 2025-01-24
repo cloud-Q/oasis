@@ -1,0 +1,156 @@
+.ConfirmContainer {
+
+    z-index: 100;
+
+    position: fixed;
+    inset: 0;
+    background-color: #10101030;
+    overflow-y: scroll;
+    width: 100%;
+
+
+
+    .ConfirmSection {
+
+        position: absolute;
+        right: 0;
+        // height: 100vh;
+        width: 720px;
+        background-color: white;
+        color: black;
+        height: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        animation: slideInY 0.5s ease-in;
+
+        @keyframes slideInY {
+            0% {
+                transform: translateY(98%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .HeadingDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+            width: 100%;
+
+
+            .MainHeading {
+                width: 80%;
+                height: 44px;
+                padding-right: 20px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: dr 0.5s ease-in;
+            }
+
+            button {
+                cursor: pointer;
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                border: none;
+
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 20px;
+                background-color: #2d2c2c21;
+                animation: bt 0.5s ease-in;
+
+                @keyframes bt {
+                    0% {
+                        width: 0;
+                    }
+
+                    100% {
+                        width: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .Image{
+            
+            position: relative;
+            left: 10px;
+            animation: im 0.5s ease-in;
+            @keyframes im{
+                0%{width: 0;}
+                100%{width: 230px;}
+            }
+
+            img{
+                width: 227px;
+                height: 227px;
+            }
+        }
+
+        .LastContainer{
+            margin-top: 5%;
+            width: 353px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .confirmationText{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .title{
+                    font-size: 25px;
+                    font-weight: 600px;
+                }
+
+                .discription{
+                    margin-top: 15px;
+                    flex-wrap: wrap;
+                }
+            }
+
+            .confimationBtn{
+                width: 353px;
+                
+
+
+                button{
+                    cursor: pointer;
+                    width: 100%;
+                    
+                    box-sizing: border-box;
+                    height: 44px;
+                    // width: 353px;
+                    border-radius: 25px;
+                    background-color: #7C71DF;
+                    color: white;
+                    font-size: 16px;
+                    margin-top: 30px;
+            
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
