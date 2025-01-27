@@ -26,12 +26,12 @@ const Payment = ({ handelCloseEvt, closeLogin }) => {
                         <input type="text" value="Credit Card Number"/>
                         <div className="cardinfo">
                             <div className="CardNum">
-                                <input type="text" /> 
+                                <input type="text" placeholder='Exp. date'/> 
                                 <img src={card} alt="mastercard" className='mastercard' />
                             </div>
-                            <input type="text" />
+                            <input type="text" placeholder='CVV'/>
                         </div>
-                        <input type="text" />
+                        <input type="text" placeholder='Name of card holder'/>
 
                         <div className="addressVerify">
                             <input type="checkbox" />

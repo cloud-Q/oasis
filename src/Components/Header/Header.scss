@@ -33,6 +33,12 @@
             }
         }
 
+        .HambergerMenu{
+            display: none;
+
+        }
+        
+
 
         .Header-LoginSection{
 
@@ -80,6 +86,26 @@
                     }
                     
                 }
+            }
+        }
+
+
+        @media screen and (max-width: 840px){
+            .Header-Links{
+                display: none;
+            }
+
+            .Header-LoginSection{
+                display: none;
+            }
+            
+            .HambergerMenu{
+                // background-color: gray;
+                display: block;
+                font-size: 25px;
+
+                cursor: pointer;
+    
             }
         }
     }

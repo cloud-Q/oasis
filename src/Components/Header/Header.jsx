@@ -7,6 +7,9 @@ import { RiShoppingCartLine } from "react-icons/ri";
 import Login from '../GetStartedComponents/Login';
 import Cart from '../CartComponent/Cart';
 
+import { RxHamburgerMenu } from "react-icons/rx";
+import Hamberger from './Hamberger';
+
 
 
 const Header = () => {
@@ -17,8 +20,13 @@ const Header = () => {
       setOpenCart(false);
       document.body.style.overflow = 'visible';
     }
-
+    
     const[openCart,setOpenCart] = useState(false);
+    
+    const[openHamberger, setOpenHamberger] = useState(false);
+    const closeHamberger = () => {
+      setOpenHamberger(false);
+    }
 
 
   return (
@@ -28,6 +36,9 @@ const Header = () => {
       <div className="Header-Section">
         <div className="Header-Logo">
             <img src={Logo} alt="Oasis Logo" />
+        </div>
+        <div className="HambergerMenu" onClick={()=>setOpenHamberger(true)}>
+          <RxHamburgerMenu/>
         </div>
         <div className="Header-Links">
             <li><a href="#">Home</a></li>
@@ -59,6 +70,10 @@ const Header = () => {
     }
     {
         openCart && <Cart closeLogin={closeLogin}/>
+    }
+
+    {
+      openHamberger && <Hamberger closeHamberger={closeHamberger}/>
     }
 </>
   )

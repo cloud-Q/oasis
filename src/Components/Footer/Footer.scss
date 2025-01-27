@@ -1,17 +1,21 @@
 .FooterComponent{
     background-color: black;
     color: white;
-    height: 410px;
+    height: 100%;
     padding-top: 2%;
     margin-top: 3%;
+    margin-bottom: 0px;
     
     
     .FooterSection{
         
-        margin: 5% 5%;
+        margin: 0px 5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+
+        
         
         
 
@@ -40,6 +44,14 @@
             justify-content: flex-end;
             gap: 0px;
 
+        }
+    }
+
+    @media (max-width:800px) {
+        .FooterSection{
+
+            display: flex;
+            flex-direction: column;
         }
     }
 }

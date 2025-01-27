@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 5%;
+    // background-color: greenyellow;
 
     .GallerySec{
-        width: 1280px;
+        width: 100%;
 
         .GalleryHeading{
             font-size: 39px;
@@ -15,9 +17,13 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            gap: 20px;
+           
             
-            width: 1280px;
+            width: 100%;
+            flex-wrap: wrap;
             overflow: hidden;
+            
             
             .btn{
                 min-width: 84px;
@@ -42,13 +48,19 @@
 
         .ImageGrids{
             display: flex;
-            width: 1280px;
-            gap: 25px;
+            width: 100%;
+            justify-content: space-around;
+            // background-color: red;
 
             .imgContainer{
+                // background-color: #7C71DF;
+                width: 100%;
                 img{
                     object-fit: cover;
                     margin-top: 25px;
+                    width:98%;
+                    
+                    
 
                 }
 
@@ -122,7 +134,7 @@
         justify-content: center;
         
         .endSection {
-            width: 1280px;
+            width: 100%;
             
             display: flex;
             flex-direction: column;
