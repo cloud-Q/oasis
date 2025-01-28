@@ -24,10 +24,10 @@ const ProductPage = () => {
             <div className="productInfoContainer">
                 <div className="gridOne">
                     <div className="images">
-                        <img src={sofa1} alt="" />
-                        <img src={sofa2} alt="" />
-                        <img src={sofa3} alt="" />
-                        <img src={sofa4} alt="" />
+                        <img src={sofa1} alt="" className='img1'/>
+                        <img src={sofa2} alt="" className='img2'/>
+                        <img src={sofa3} alt="" className='img3'/>
+                        <img src={sofa4} alt="" className='img4'/>
                     </div>
                 </div>
 

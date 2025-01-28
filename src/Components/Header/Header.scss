@@ -90,11 +90,17 @@
         }
 
 
-        @media screen and (max-width: 840px){
+    }
+    @media screen and (max-width: 840px){
+        .Header-Section{
+
+            display: flex;
+            justify-content: space-between;
+
             .Header-Links{
                 display: none;
             }
-
+    
             .Header-LoginSection{
                 display: none;
             }
@@ -103,8 +109,9 @@
                 // background-color: gray;
                 display: block;
                 font-size: 25px;
-
+    
                 cursor: pointer;
+                
     
             }
         }

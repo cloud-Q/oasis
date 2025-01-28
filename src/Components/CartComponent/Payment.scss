@@ -28,6 +28,7 @@
 
 
         animation: slideInY 0.5s ease-in;
+        transform-origin: right;
 
         @keyframes slideInY {
             0% {

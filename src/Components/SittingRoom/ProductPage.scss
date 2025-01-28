@@ -172,6 +172,49 @@
 
 
         }
+
+
+        @media  (max-width:500px) {
+
+
+            .porductSec{
+                .breadCrumb{
+                    width: 100;
+                    overflow: hidden;
+
+                }
+            }
+            .productInfoContainer{
+                // background-color: gold;
+
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                margin-top: 2%;
+
+                .gridOne{
+
+                    // background-color: green;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .images{
+                        .img1{
+                            width: 361px;
+                            height: 361px;
+                        }
+
+                        .img2, .img3, .img4{
+                            display: none
+                        }
+                    }
+                }
+            }
+        }
         
     }
 }

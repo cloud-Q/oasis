@@ -169,6 +169,27 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                
+                
+                .productItem {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 164px;
+                    height: 400px;
+                    
+    
+                    .productImageContainer {
+                        background-color: green;
+
+                        width: 164px;
+                        height: 235px;
+
+                        margin-bottom: 15px;
+                    }
+                }
 
             }
             
