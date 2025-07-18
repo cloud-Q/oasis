@@ -1,18 +1,20 @@
 .Header-Container{
+    width: 100%;
 
     .Header-Section{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
         align-items: center;
 
+        box-sizing: border-box;
         height: 92px;
-        padding-left: 80px;
-        padding-right: 80px;
+        width: 100%;
+
+        padding: 0% 7%;
 
 
         .Header-Links{
-
             display: flex;
             flex-direction: row;
             align-items: center;

@@ -14,7 +14,7 @@ const Categorjues = () => {
 
 const Navigate = useNavigate();
 return (
-    <div className='categoryContainer'>
+    <div className='categoryContainer' id='categoryMain'>
         <div className="categorySection">
             <h4>Category</h4>
             <div className="categoryItemGrids">

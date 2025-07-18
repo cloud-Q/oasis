@@ -18,7 +18,7 @@ const ProductGrid = () => {
 
   return (
     <>
-      <div className="mainProductSec">
+      <div className="mainProductSec" id="productSectionMain">
         <div className="ProductContainer">
           <div className="titleNFeatures">
             <h4 className="productTitle">Top Products</h4>

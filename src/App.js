@@ -1,32 +1,26 @@
-import React from 'react'
+// App.js
+// import React from 'react'
 import Header from './Components/Header/Header'
 import Mainsection from './Components/MainComponents/Mainsection'
-import Sittingroom from './Components/SittingRoom/Sittingroom';
-
-import { BrowserRouter, Routes, Route } from "react-router";
-import Footer from './Components/Footer/Footer';
-import ProductPage from './Components/SittingRoom/ProductPage';
-
-
-const App = () => {
-  return (
-    <>
+import Sittingroom from './Components/SittingRoom/Sittingroom'
+import ProductPage from './Components/SittingRoom/ProductPage'
+import Footer from './Components/Footer/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router'
+import './App.css'
+const App = () => (
+  <div className="app-container">
     <Header/>
 
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Mainsection/>}/>
-      <Route path='/:firstpage/:secondpage' element={<Sittingroom/>}/>
-      <Route path='/:firstpage/:secondpage/:thirdpage' element={<ProductPage/>}></Route>
-    </Routes>
-      
-    
+      <Routes>
+        <Route path='/' element={<Mainsection/>}/>
+        <Route path='/:first/:second' element={<Sittingroom/>}/>
+        <Route path='/:first/:second/:third' element={<ProductPage/>}/>
+      </Routes>
     </BrowserRouter>
 
     <Footer/>
-    
-    </>
-  )
-}
+  </div>
+)
 
 export default App

@@ -81,7 +81,14 @@
             margin: 3% 5%;
             margin-bottom: 200px;
 
-
+            .LandingInfoSec{
+                .infoDescription{
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin-top: 40px;
+                    margin-bottom: 50px;
+                }
+            }
             .tagLine{
                 font-weight: 600;
                 // color: red;
@@ -101,8 +108,6 @@
             margin-bottom: 200px;
 
             .LandingInfoSec{
-
-                
                 .tagLine{
                     font-size: 41px;
                     font-weight: 700;
@@ -119,13 +124,7 @@
                 }
 
             }
-
-
-        
         }
-
-
-
         
     }
 }

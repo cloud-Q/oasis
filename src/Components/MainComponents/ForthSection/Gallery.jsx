@@ -16,7 +16,7 @@ import options from '../../../Assets/Data/galleryoptionbuttons';
 
 const Gallery = () => {
     return (
-        <div className='GallaryContainer'>
+        <div className='GallaryContainer' id='blogMain'>
             <div className="GallerySec">
                 <div className="GalleryHeading">
                     <h3>Design inspiration and modern home ideas</h3>

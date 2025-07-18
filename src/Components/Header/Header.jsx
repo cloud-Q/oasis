@@ -28,11 +28,20 @@ const Header = () => {
       setOpenHamberger(false);
     }
 
+         // factory: returns a click handler that scrolls to the `href` target
+    const scrollToSection = (e) => {
+      e.preventDefault()
+      const targetId = e.currentTarget.getAttribute('href').slice(1)
+      const el = document.getElementById(targetId)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }
+
+
 
   return (
     <>
 
-    <div className='Header-Container'>
+    <div className='Header-Container' id='homeMain'>
       <div className="Header-Section">
         <div className="Header-Logo">
             <img src={Logo} alt="Oasis Logo" />
@@ -41,10 +50,10 @@ const Header = () => {
           <RxHamburgerMenu/>
         </div>
         <div className="Header-Links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#homeMain" onClick={scrollToSection}>Home</a></li>
+            <li><a href="#productSectionMain" onClick={scrollToSection}>Shop</a></li>
+            <li><a href="#categoryMain" onClick={scrollToSection}>Category</a></li>
+            <li><a href="#blogMain" onClick={scrollToSection}>Blog</a></li>
         </div>
         <div className="Header-LoginSection">
             <div className="ShopingCart">

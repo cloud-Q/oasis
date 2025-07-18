@@ -1,0 +1,11 @@
+/* index.scss */
+:root {
+  font-size: 16px;
+}
+.app-container {
+  width: 100%;
+  box-sizing: border-box;  
+  /* max-width: 1200px;     */
+  margin: 0 auto;
+  /* padding: 0 0.5rem;    */
+}
