@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.scss'
 import Logo from '../../Assets/Images/Oasis.svg'
-import ShopingCartLogo from '../../Assets/Images/cart.png'
+
 import { FaArrowRight } from "react-icons/fa";
 import { RiShoppingCartLine } from "react-icons/ri";
 import Login from '../GetStartedComponents/Login';
